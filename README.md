@@ -1,4 +1,4 @@
 webcomponent-canvas
 ===================
 
-Webcomponents contiaing canvas animations that can extenede and modifeid.
+Webcomponents containing canvas animations that can extended and modifeid.
