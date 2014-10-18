@@ -26,10 +26,10 @@
         created: function() {},
 
         ready: function() {
-            this.canvas = this.$.kalCanvas;
+            this.canvas = this.$.animationCanvas;
             this.canvas.width = this.width;
             this.canvas.height = this.height;
-             this.context = this.canvas.getContext("2d");
+            this.context = this.canvas.getContext("2d");
 
             this.backCanvas = document.createElement('canvas');
             this.backContext = this.backCanvas.getContext('2d');
