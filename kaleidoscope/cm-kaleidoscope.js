@@ -52,6 +52,7 @@
 
             this.super();           
             this.backContext.translate(this.centreX, this.centreY);
+            this.backContext.fillStyle = this.color;
            
         },
 
@@ -90,8 +91,7 @@
                 if (Math.abs(this._x[i]) > this.radiusX) this._sx[i] = - this._sx[i];
                 if (Math.abs(this._y[i]) > this.radiusY) this._sy[i] = - this._sy[i];      
             }
-    
-            this.backContext.fillStyle = this.color;
+                
             for(i = 0; i<this.totalQuads; i++) {
                 this.drawQuad(this.rotation+1);
             }
