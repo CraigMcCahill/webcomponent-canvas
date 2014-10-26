@@ -1,0 +1,16 @@
+#wrapper {
+	width: 400px;
+}
+
+#slider {
+	position: absolute;
+	left: 100px;
+}
+
+paper-slider::shadow #sliderBar::shadow #activeProgress {
+  background-color: #607D8B;
+}
+
+paper-slider::shadow #sliderKnobInner {
+   background-color: #607D8B;
+}
