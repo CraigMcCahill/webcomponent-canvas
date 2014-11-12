@@ -7,15 +7,10 @@
   <template>
   	<link rel="stylesheet" href="cm-interactive-circles.css">
   	<div id="wrapper">
-  		<cm-rotating-circles color="rgba(96, 125, 139, .4)"></cm-rotating-circles>
+  		<cm-rotating-circles id="circles" color="rgba(96, 125, 139, .4)"></cm-rotating-circles>
   		<paper-slider  id="slider" min="1" max="12" value="12"></paper-slider>
   		
   	</div>
     </template>
-    	<script>
-	  		var slider = this.$.slider;
-	  		slider.addEventListener('change', function(e) {
-	    		console.log("value:" + slider.immediateValue);
-	  		});
-	</script>
- </polymer-element>
+     <script src="cm-interactive-circles.js"></script>
+</polymer-element>

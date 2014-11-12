@@ -35,6 +35,10 @@
             this.backContext.fillStyle = this.color;
        },
 
+        totalCirclesChanged: function() {
+           
+        },
+        
         circleX: function circleX(distance, angle) {
             "use strict";
 
