@@ -8,17 +8,19 @@
   	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   	<meta charset="UTF-8"> 
 
-  	<script src="bower_components/platform/platform.js">
+  	<script src="bower_components/webcomponentsjs/webcomponents.min.js">
   	</script>
 
-  	<!-- <link rel="import" href="kaleidoscope/cm-kaleidoscope.html"> -->
+  	<link rel="import" href="kaleidoscope/cm-kaleidoscope.html">
 	<link rel="import" href="interactive-circles/cm-interactive-circles.html">
 
 
 </head>
 <body unresolved>
-	<!-- <cm-kaleidoscope totalQuads="16" color="rgba(96, 125, 139, .4)"></cm-kaleidoscope> -->
-	<cm-interactive-circles></cm-interactive-circles>
 
+<div horizontal layout wrap>
+	<cm-kaleidoscope totalQuads="16" color="rgba(96, 125, 139, .4)"></cm-kaleidoscope>
+	<cm-interactive-circles></cm-interactive-circles> 
+</div>
 </body>
 </html>
