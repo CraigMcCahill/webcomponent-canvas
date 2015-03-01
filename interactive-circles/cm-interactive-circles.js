@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
 
     function degreesToRadians(degrees) {
@@ -21,12 +23,8 @@
         },
 
         controlCircles: function controlCircles(e) {
-             console.log("value:" + this.slider.immediateValue);
+             // console.log('value:' + this.slider.immediateValue);
              this.circles.totalCircles = this.slider.immediateValue;
         },
-
-      
-
-
-    });
+ });
 }());

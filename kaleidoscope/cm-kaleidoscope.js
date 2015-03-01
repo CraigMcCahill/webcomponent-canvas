@@ -1,6 +1,7 @@
 (function () {
 
     function degreesToRadians(degrees) {
+        'use strict';
         return degrees * (Math.PI /180);
     }
 
@@ -13,11 +14,11 @@
                       
         publish: {
             totalQuads: 16,
-            color: "rgba(64, 64, 64, .6)",      
+            color: 'rgba(64, 64, 64, .6)',      
         },
 
         created: function() {
-            "use strict";
+            'use strict';
 
             this.centreX = this.width/2;
             this.centreY = this.height/2;
@@ -57,7 +58,7 @@
         },
 
         drawQuad: function drawQuad(rotate) {
-            "use strict";
+            'use strict';
 
             this.backContext.rotate(degreesToRadians(1*(360/this.totalQuads)));
             this.backContext.beginPath();
@@ -72,7 +73,7 @@
         },
 
         animate: function animate() {
-            "use strict";
+            'use strict';
 
             // Store the current transformation matrix
             this.backContext.save();
