@@ -9,14 +9,14 @@
                     
         publish: {
             totalCircles: 12,
-            color: "rgba(64, 64, 64, .6)", 
+            color: 'rgba(64, 64, 64, .6)', 
             mainRad: 90,
             circleRad: 80,
             rotation: 0.1,               
         },
 
         created: function() {
-            "use strict";
+            'use strict';
 
             this.centreX = this.width/2;
             this.centreY = this.height/2;
@@ -27,6 +27,7 @@
         },
 
         ready: function() {
+
             //Can't use strict here - polymer super() uses .caller() which throws an error in strct mode see 
             //http://stackoverflow.com/questions/16871050/inconsistent-scope-of-use-strict-on-different-web-browsers-concerning-argumen
 
@@ -40,21 +41,18 @@
         },
         
         circleX: function circleX(distance, angle) {
-            "use strict";
-
-            var distance, angle;
+            'use strict';
             return distance * Math.sin(Math.PI * angle/6);
         },
 
         circleY: function circleY(distance, angle) {
-            "use strict";
+            'use strict';
 
-            var distance, angle;
             return -distance * Math.cos(Math.PI * angle/6);
         },
 
         positionCircles: function positionCircles(size) {
-            "use strict";
+            'use strict';
 
             var cX, cY, i;
             for (i=1; i<this.totalCircles+1; i++) {
@@ -68,7 +66,7 @@
         },       
 
         animate: function animate() {
-            "use strict";
+            'use strict';
 
             this.backContext.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
